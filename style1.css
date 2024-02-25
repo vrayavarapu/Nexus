@@ -1,0 +1,161 @@
+*{
+    font-family: 'Georgia';
+    color: #fff;
+}
+
+.top-line {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 5px;
+    background-color: #000;
+}
+
+.container {
+    text-align: center;
+    font-size: 72px; /* Adjust if needed */
+}
+
+.boxed, .rest {
+    font-weight: 700;
+    letter-spacing: 0.6em; /* Adjusted letter spacing */
+    vertical-align: middle; /* Align the "N" vertically with the rest of the text */
+}
+
+.boxed {
+    color: #000;
+    padding: 0 10px; /* Adjust padding as needed */
+    display: inline-block;
+    margin-right: -0.3em; /* Adjust this value as needed */
+}
+
+.rest {
+    padding-left: 0.3em; /* Adjusted to align the first letter of .rest with the spacing */
+    font-family: 'Helvetica'
+}
+
+.button-container {
+    margin-top: 20px;
+}
+.color{
+    color: #fff;
+    font-size:3rem;
+}
+
+.button {
+    padding: 1rem 3rem;
+    font-size: 1rem;
+    border: none;
+    color: #000;
+    background: #fff;
+    cursor: pointer;
+    border-radius: 20px;
+
+
+}
+.red-button{
+    padding: 1rem 3rem;
+    font-size: 1rem;
+    border: none;
+    color: #fff;
+    background: #000;
+    cursor: pointer;
+    border-radius: 20px;
+}
+.small-font {
+    font-size: 20px;
+    color: #000;
+}
+
+.sphere {
+    position: absolute;
+    bottom: 0;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #3498db; /* Example color */
+    animation: bounce 2s infinite;
+}
+
+/* Additional styles for your page */
+.top-line {
+    /* Your existing styles */
+}
+
+.container {
+    /* Your existing styles */
+}
+
+@keyframes bounce {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-20px); }
+}
+body {
+    margin: auto;
+    font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+    overflow: auto;
+    background: linear-gradient(315deg, rgb(149, 13, 140) 3%, rgb(98, 13, 120) 38%, rgb(43, 2, 56) 68%, rgb(0, 0, 0) 98%);
+    animation: gradient 15s ease infinite;
+    background-size: 400% 400%;
+    background-attachment: fixed;
+}
+
+@keyframes gradient {
+    0% {
+        background-position: 0% 0%;
+    }
+    50% {
+        background-position: 100% 100%;
+    }
+    100% {
+        background-position: 0% 0%;
+    }
+}
+
+.wave {
+    background: rgb(104, 9, 148);
+    border-radius: 1000% 1000% 0 0;
+    position: fixed;
+    width: 200%;
+    height: 12em;
+    animation: wave 10s -3s linear infinite;
+    transform: translate3d(0, 0, 0);
+    opacity: 0.8;
+    bottom: 0;
+    left: 0;
+    z-index: -1;
+}
+
+.wave:nth-of-type(2) {
+    bottom: -1.25em;
+    animation: wave 18s linear reverse infinite;
+    opacity: 0.8;
+}
+
+.wave:nth-of-type(3) {
+    bottom: -2.5em;
+    animation: wave 20s -1s reverse infinite;
+    opacity: 0.9;
+}
+
+@keyframes wave {
+    2% {
+        transform: translateX(1);
+    }
+
+    25% {
+        transform: translateX(-25%);
+    }
+
+    50% {
+        transform: translateX(-50%);
+    }
+
+    75% {
+        transform: translateX(-25%);
+    }
+
+    100% {
+        transform: translateX(1);
+    }
+}
